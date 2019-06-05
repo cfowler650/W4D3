@@ -1,0 +1,16 @@
+<h1> THIS IS THE SIGN IN  </h1>
+
+
+<form action="<% session_url %>" method="POST"/>
+
+  <br>
+  <label> Username:
+    <input type="text" name="user[username]" value="<%= @user.username %>">
+  </label>
+  <br>
+
+  <label> Password:
+    <input type="text" name="user[password]" value="<%= @user.password %>">
+  </label>
+
+</form>
