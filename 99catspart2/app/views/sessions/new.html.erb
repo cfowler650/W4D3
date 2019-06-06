@@ -1,7 +1,7 @@
 <h1> THIS IS THE SIGN IN  </h1>
 
 
-<form action="<% session_url %>" method="POST"/>
+<form action="<% cats_url %>" method="GET">
 
   <br>
   <label> Username:
@@ -11,6 +11,10 @@
 
   <label> Password:
     <input type="text" name="user[password]" value="<%= @user.password %>">
+  </label>
+
+  <label> Sign In:
+   <input type="submit" value="submit">
   </label>
 
 </form>
